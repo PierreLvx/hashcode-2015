@@ -20,6 +20,7 @@ struct server
 	int		row;
 	int		col;
 	int		grp;
+	int		no;
 };
 
 struct data	get_data(FILE*);
