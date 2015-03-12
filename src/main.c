@@ -17,6 +17,7 @@ int		main(int argc, char **argv)
 	init_racks(srv_rack, &srv_data, fd);
 	srvs = init_srvs(&srv_data, fd);
 	sort_srvs(&srv_data, srvs);
+	place_srvs(&srv_data, srv_rack, srvs);
 	put_tab(&srv_data, srv_rack, srvs);
 	return 0;
 }
