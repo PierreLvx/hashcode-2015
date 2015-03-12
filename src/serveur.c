@@ -28,5 +28,5 @@ void	put_tab(struct data *d, int **tab, struct server *srvs)
 	}
 	puts("");
 	for (i = 0; i < d->srvs; ++i)
-		printf("%d %d\n", srvs[i].slots, srvs[i].cap);
+		printf("%d %d %d %d %d\n", srvs[i].slots, srvs[i].cap, srvs[i].row, srvs[i].col, srvs[i].grp);
 }
