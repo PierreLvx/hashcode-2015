@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "srv.h"
 
 int		main(int argc, char **argv)
 {
