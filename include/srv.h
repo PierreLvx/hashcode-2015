@@ -1,6 +1,8 @@
 #ifndef		SRV_H
 # define	SRV_H
 
+# include <stdio.h>
+
 struct data
 {
 	int		rows;
