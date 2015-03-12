@@ -8,7 +8,7 @@ int		**make_tab(struct data *d)
 	i = -1;
 	ret = (int**)malloc(sizeof(int*) * d->rows);
 	while (++i < d->rows)
-		ret = (int*)malloc(sizeof(int) * d->cols);
+		ret[i] = (int*)malloc(sizeof(int) * d->cols);
 	return (ret);
 }
 
