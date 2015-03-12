@@ -12,12 +12,13 @@ int		**make_tab(struct data *d)
 	return (ret);
 }
 
-void	put_tab(struct data *d, int **tab)
+void	put_tab(struct data *d, int **tab, struct server *srvs)
 {
 	int		i;
 	int		j;
 
 	i = -1;
+	printf("%i %i %i %i %i\n\n", d->rows, d->cols, d->unavail, d->grps, d->srvs);
 	while (++i < d->rows)
 	{
 		j = -1;
@@ -25,4 +26,7 @@ void	put_tab(struct data *d, int **tab)
 			printf("%d", tab[i][j]);
 		printf("\n");
 	}
+	puts("");
+	for (i = 0; i < d->srvs; ++i)
+		printf("%d %d\n", srvs[i].slots, srvs[i].cap);
 }
