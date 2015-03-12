@@ -1,6 +1,6 @@
 #include "srv.h"
 
-void	init_rack(int **srv_rack, struct data *srv_data, FILE *fd)
+void	init_racks(int **srv_rack, struct data *srv_data, FILE *fd)
 {
 	int 	x,y;
 	int 	i;
