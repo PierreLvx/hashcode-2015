@@ -6,7 +6,8 @@ void	init_racks(int **srv_rack, struct data *srv_data, FILE *fd)
 	int 	i;
 
 	i = 0;
-	fscanf(fd, "/n");
+	x = 0;
+	y = 0;
 	while (i < srv_data->unavail)
 	{
 		fscanf(fd, "%i %i\n", &x, &y);
