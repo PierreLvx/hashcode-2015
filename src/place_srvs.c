@@ -6,8 +6,8 @@ int		fits(int sz, int** racks, int i, int j, struct data *srv_data)
 
 	if (i >= srv_data->rows)
 		return 0;
-	for (k = 0; k < sz && j + k < srv_data->cols; k++)
-		if (racks[i][j + k])
+	for (k = 0; k < sz; k++)
+		if (j + k >= srv_data->cols || racks[i][j + k])
 			return (0);
 	for (k = 0; k < sz; k++)
 		racks[i][j + k] = 1;
