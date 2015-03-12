@@ -12,8 +12,19 @@ struct data
 	int		srvs;
 };
 
+struct server
+{
+	int		slots;
+	int		cap;
+	int		row;
+	int		col;
+	int		grp;
+}
+
 struct data	get_data(FILE*);
 int**		make_tab(struct data*);
 void		init_racks(int**, struct data*, FILE*);
+
+struct server	*init_srvs(struct data*, FILE*);
 
 #endif
