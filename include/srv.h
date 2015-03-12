@@ -10,8 +10,8 @@ struct data
 	int		srvs;
 };
 
-struct data	get_data(int*);
+struct data	get_data(FILE*);
 int**		make_tab(struct data*);
-void		init_racks(int**, int*);
+void		init_racks(int**, FILE*);
 
 #endif
